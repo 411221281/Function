@@ -1,9 +1,13 @@
+// 自行編輯 //
+// 輸出含空格之字串 //
+
 #include <stdio.h>
 #include <string.h>
 
 int main() {
     char str[1000001];
 
+    // 如果一次輸入多個字元(字串) 不包括按下enter的換行符號 空格建會算一個字元 //
     while(gets(str)) {
         int len = strlen(str);
 
