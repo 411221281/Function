@@ -14,7 +14,7 @@ int main() {
     scanf("%s", &str);
 
     for(int i = strlen(str) -1; i >= 0; i--) {
-        if(isdigit(str[i])) {     // isdigit 判斷字元是否為數字 //
+        if(isdigit(str[i])) {     // isdigit()判斷字元是否為數字 //
             sum = sum + (str[i] - '0')*base;
             base *= 10;
             continue;
