@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+    char *str = "banana";
+    char *key = "ana";
+    int count = 0;
+
+    while(strstr(str,key) != NULL) {
+        count++;
+        str = strstr(str,key) + 1;
+    }
+
+    printf("%d", count);
+    return 0;
+}
