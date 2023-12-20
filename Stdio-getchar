@@ -9,6 +9,7 @@ int main() {
     char str[1000];
     int i = 0;
 
+    // 一個一個存取字元 //
     while(1) {
         str[i] = getchar(); // getchar 不會因為空格建 造成字串截斷 只取空格前之字串 與scanf的差異在此 //
         
