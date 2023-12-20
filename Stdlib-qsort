@@ -1,1 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
 
+int n, m, count;
+
+int cmp(const void *x, const void *y) {
+
+    int a = *(int *)x;
+    int b = *(int *)y;
+    
+    return a > b;
+}
+
+int main() {
+
+    int arr[100001];
+    int n;
+
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+  
+    for(int i = 0; i < n; i++) {
+        qsort(arr, n, sizeof(arr[0]), cmp);
+    }
+
+    for(int i = 0; i < n; i++) {
+        printf("%d\n", arr[i]);
+    }
+
+    return 0;
+}
