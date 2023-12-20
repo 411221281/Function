@@ -1,3 +1,6 @@
+// 自行編輯 //
+// 判斷輸入之數是否為正數 //
+
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -9,13 +12,13 @@ int main () {
     scanf("%d",&number);
     
     if (number > 0) {
-        check = true;
+        check = true;  // 若為正數 則為true //
     }
     else {
         check = false;
     }
 
-    if (check) {
+    if (check) { // 若為true 變得知此數為正數 並輸出 //
         printf("%d is positive number\n", number);
     }
     else {
