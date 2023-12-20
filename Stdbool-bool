@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main () {
+
+    int number;
+    bool check = true;
+
+    scanf("%d",&number);
+    
+    if (number > 0) {
+        check = true;
+    }
+    else {
+        check = false;
+    }
+
+    if (check) {
+        printf("%d is positive number\n", number);
+    }
+    else {
+        printf("%d is  not positive number\n", number);
+    }
+
+    return 0;
+}
