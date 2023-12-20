@@ -9,9 +9,9 @@ int main() {
     char str[1000];
     int i = 0;
 
-    // 一個一個存取字元 //
+    // 若輸入超過兩個字元 getchar()只會讀取第一個字元 並將其餘字元留在緩衝區 直到下一次的getchar() //
     while(1) {
-        str[i] = getchar(); // getchar 不會因為空格建 造成字串截斷 只取空格前之字串 與scanf的差異在此 //
+        str[i] = getchar(); // getchar()不會因為空格建 造成字串截斷而只取空格前之字串 與scanf()的差異在此 //
         
         if(str[i] == '\n' || str[i] == EOF) {
             break;
