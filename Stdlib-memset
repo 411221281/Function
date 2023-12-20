@@ -1,3 +1,6 @@
+// oj 第六周第四題 //
+// 判斷一字串中 最長且未有重複字元之字串 //
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -30,7 +33,8 @@ int main() {
             }
         }
 
-        memset(record, 0, sizeof(record));
+        // 將記錄長度用的record[]陣列中歸零 //
+        memset(record, 0, sizeof(record));  // memset(將要初始化之陣列,初始化之值,每一格之記憶體大小) //
         
     }
 
