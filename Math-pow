@@ -1,9 +1,12 @@
+// 自行編輯 //
+// 計算某一數字的多次方值 //
+
 #include <stdio.h>
 #include <math.h>
 
 int main () {
 
-   printf("Value of 1.1 ^ 3 = %lf", pow(1.1, 3));
+   printf("Value of 1.1 ^ 3 = %lf", pow(1.1, 3));  // pow(被乘數,乘的次方數) //
    
    return 0;
 }
