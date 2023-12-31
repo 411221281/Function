@@ -1,0 +1,17 @@
+//  自行編輯  //
+//  計算sin值  //
+
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159265  //  定義圓周率  //
+
+int main () {
+
+   double angle, value;  //  使用double可較精準的計算結果  //
+   scanf("%lf", &angle);
+
+   value = sin(angle*(PI/180.0));  //  角度要先換算成"徑"  //
+   printf("The sine of %lf is %lf degrees\n", angle, value);
+   
+   return 0;
+}
