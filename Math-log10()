@@ -1,0 +1,16 @@
+//  自行編輯  //
+//  計算以10為底的對數值  //
+
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    
+   double number, value;  //  使用double可較精準的計算數值  //
+   scanf("%lf", &number);
+  
+   value = log10(number);
+   printf("log10(%lf) = %lf\n", number, value);
+   
+   return 0;
+}
