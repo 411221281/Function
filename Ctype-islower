@@ -1,0 +1,19 @@
+//  自行編輯  //
+//  判斷英文字母是否為大寫  //
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main () {
+   char ch;
+   scanf("%c", &ch);
+    
+   if(islower(ch)) {  //  islower() 是用來判斷一字母是否為小寫  //
+      printf("%c is lowercase character\n", ch);
+   } 
+   else {
+      printf("%c is not lowercase character\n", ch);
+   }
+
+   return 0;
+}
