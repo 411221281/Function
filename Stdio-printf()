@@ -1,0 +1,14 @@
+//  參考https://www.tutorialspoint.com/  //
+//  輸出數值為65且經過ascii table轉換號後得到的字元  //
+
+#include <stdio.h>
+
+int main () {
+   
+   int number;
+   for(number = 65; number <= 90; number++) {  //  65~90 相等於 A~Z  //
+      printf("ASCII value = %d, Character = %c\n", number, number);
+   }
+
+   return 0;
+}
