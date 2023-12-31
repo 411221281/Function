@@ -1,0 +1,20 @@
+//  參考https://www.tutorialspoint.com/  //
+//  輸入輸出姓及名  //
+
+#include <stdio.h>
+
+int main () {
+
+   char firstname[20], name[20];  //  含字尾符號長度共為20  //
+
+   printf("Enter the firstname: ");  //  姓氏  //
+   scanf("%19s", firstname);  //  最多只能輸入19個字元 最後一個須留給字尾符號  //
+
+   printf("Enter the name: ");  //  名字  //
+   scanf("%19s", name);  //  最多只能輸入19個字元 最後一個須留給字尾符號  //
+
+   printf("Entered the firstname: %s\n", firstname);
+   printf("Entered the name:%s", name);
+   
+   return 0;
+}
