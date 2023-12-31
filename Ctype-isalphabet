@@ -1,0 +1,20 @@
+//  自行編輯  //
+//  判斷是否為英文字母  //
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main () {
+   
+   char ch;
+   scanf("%c", &ch);
+    
+   if(isalpha(ch)) {  //  isalphabet() 用來判斷輸入的ch是否為英文字母 若是則為1 反之為0  //
+      printf("%c is an alphabet\n", ch);
+   } 
+   else {
+      printf("%c is not an alphabet\n", ch);
+   }
+   
+   return 0;
+}
