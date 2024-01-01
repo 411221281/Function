@@ -5,7 +5,7 @@
 
 int main() {
 
-   time_t seconds;  //  time_t為一函數 設定為計算從1970年1月1日0時0分0秒到此時的秒數  //
+   time_t seconds;  //  宣告一個以time_t為函數的變數second紀錄秒數 其設定為計算從1970年1月1日0時0分0秒到此時的秒數  //
    seconds = time(NULL);  //  如果參數為空(NULL)，函數將只通過返回值返回現在的日曆時間  //
 
    printf("Seconds since January 1, 1970 = %ld\n", seconds);
