@@ -1,0 +1,17 @@
+//  自行編輯  //
+//  動態分配記憶體大小  //
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+
+   char *str; //  宣告一個為char型態的指標變數  //
+   str = (char *) malloc(12);  //  分配長度為12的字串給他  //
+
+   strcpy(str, "Hello World");  //  將Hello World複製至字串str  //
+   printf("String = %s\n", str);
+   
+   return 0;
+}
