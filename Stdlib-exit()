@@ -1,0 +1,20 @@
+//  參考https://www.runoob.com/  //
+//  利用exit()來結束程式，並將exit的引數回傳給作業系統  //
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int exit_test() {
+    
+    printf("sub output1\n");
+    exit(0);  //  程式在這裡結束 ; 引數為()中的數字 exit(0)為成功 exit(1)失敗  //
+    printf("sub output2\n");
+    
+    return 0;
+} 
+
+int main() {
+    printf("main output1\n"); 
+    exit_test();  //  傳至副程式exit_test()  //
+    printf("main output2\n");
+}
