@@ -1,0 +1,23 @@
+//  參考https://read01.com/zh-tw/4G6yggE.html  //
+//  輸出設定好的時間  //
+
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+int main() {
+   struct tm t;  //  struct tm為已設定好的結構  //
+
+  //  接下來為想要的輸出時間  //
+   t.tm_sec    = 10;
+   t.tm_min    = 10;
+   t.tm_hour   = 6;
+   t.tm_mday   = 25;
+   t.tm_mon    = 2;
+   t.tm_year   = 89;
+   t.tm_wday   = 6;
+
+   puts(asctime(&t));  //  asctime()會以 "星期幾 月份 日期 時:分:秒 年\n\0" 的格式輸出  //
+   
+   return 0;
+}
