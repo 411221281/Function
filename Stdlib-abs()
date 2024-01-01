@@ -1,0 +1,20 @@
+// 自行編輯  //
+//  取絕對值  //
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+
+   int number;
+   scanf("%d", &number);
+
+   if(number < 0) {    //  若此數字為負數 則用abs()將其轉為正數  //
+      printf("value of a = %d\n", abs(number));
+   }
+   else {
+      printf("value of a = %d\n", number);
+   }
+
+   return 0;
+}
