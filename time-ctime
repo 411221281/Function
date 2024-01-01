@@ -1,0 +1,15 @@
+//  參考https://www.tutorialspoint.com/  //
+//  輸出當前時間  //
+
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+
+   time_t curtime;  //  宣告一個以time_t為函數的變數curtime紀錄現在時刻  //
+   time(&curtime);  //  利用time()讀取現在時間 存取至curtime的記憶體位置//
+
+   printf("Current time = %s", ctime(&curtime));  //  ctime()將會以 "星期 月份 日期 時 分 秒 年" 的格式輸出  //
+
+   return 0;
+}
