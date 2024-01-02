@@ -1,0 +1,18 @@
+//  參考https://www.runoob.com/  //
+//  利用assert()函數假設條件並檢驗  //
+
+#include <assert.h>
+#include <stdio.h>
+ 
+int main() {
+
+   int number;
+   
+   printf("Enter a number: ");
+   scanf("%d", &number);
+
+   assert(number >= 10);  //  若 number<10 則終止程式并輸出錯誤訊息  //
+   printf("The number is %d\n", number);  //  若 number>=10 將執行此行程式碼  //
+
+   return 0;
+}
