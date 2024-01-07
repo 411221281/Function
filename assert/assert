@@ -1,5 +1,5 @@
 //  參考https://www.runoob.com/  //
-//  利用assert()函數假設條件並檢驗  //
+//  利用assert()假設條件並檢驗  //
 
 #include <assert.h>
 #include <stdio.h>
@@ -16,3 +16,5 @@ int main() {
 
    return 0;
 }
+
+**  assert()實際上是一個宏 而不是一個函數 它可以被用來添加在C程序診斷  **
