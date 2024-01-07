@@ -1,0 +1,23 @@
+//  參考https://tw.gitbook.net/c_standard_library/c_function_realloc.html  //
+//  試圖調整以前分配與調用malloc或calloc的ptr所指向的記憶體的大小 最後將malloc或realloc調用先前分配的記憶體釋放掉  //
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+  
+   char *str;
+
+   str = (char *) malloc(15);  //  初始分配記憶體大小  //
+   strcpy(str, "yiibai");
+   printf("String = %s,  Address = %u \n", str, str);  //  輸出字串及其址  //
+
+   str = (char *) realloc(str, 25);  //  重新調整str的記憶體大小  //
+   strcat(str, ".com");
+   printf("String = %s,  Address = %u \n", str, str);  //  再次輸出字串及其址  //
+
+   free(str);  //  將先前分配的記憶體釋放掉  //
+
+   return 0;
+}
