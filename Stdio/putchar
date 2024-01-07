@@ -1,0 +1,15 @@
+//  參考https://tw.gitbook.net/c_standard_library/c_function_putchar.html  //
+//  一個一個輸出字母A~Z  //
+
+#include <stdio.h>
+
+int main() {
+   
+   char ch;
+
+   for(ch = 'A' ; ch <= 'Z' ; ch++) {
+      putchar(ch);    //  一個putchar()只能輸出一次 因此利用for迴圈輸出26次  //
+   }
+   
+   return 0;
+}
