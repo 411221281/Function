@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+   float number;
+   scanf("%f", &number);
+
+   ceil(number);
+   printf ("The value is %.1lf", number);
+   
+   return 0;
+}
