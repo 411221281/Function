@@ -1,0 +1,16 @@
+// 自行編輯  //
+//  取餘數  //
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+   float n1, n2, value;
+   scanf("%f %f", &n1, &n2);
+
+   value = fmod(n1,n2);    //  fmod(n1,n2)函數為 取n1除以n2除不進的餘數  //
+   printf("Remainder of %f / %f is %lf", n1, n2, value);
+
+   return 0;
+}
