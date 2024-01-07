@@ -1,13 +1,16 @@
+//  自行編輯  //
+//  輸出不小於number的最小整數值  //
+
 #include <stdio.h>
 #include <math.h>
 
 int main() {
 
-   float number;
+   float number, value;
    scanf("%f", &number);
 
-   ceil(number);
-   printf ("The value is %.1lf", number);
+   value = ceil(number);  //  ceil()函數將取一個大於或等於number的最小整數  //
+   printf ("value = %.1lf\n", value);
    
    return 0;
 }
