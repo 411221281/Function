@@ -1,0 +1,20 @@
+//  自行編輯  //
+//  判斷是否為標點符號  //
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+
+   char ch;
+   scanf("%c", &ch);
+
+   if(ispunct(ch)) {  //  ispunct(ch)會判斷ch是否為一標點符號 若是則回傳1 否則回傳0  //
+       printf("%c is a punctuation character", ch);
+   }
+   else {
+       printf("%c is not a punctuation character", ch);
+   }
+   
+   return 0;
+}   
