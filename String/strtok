@@ -1,0 +1,22 @@
+//  參考https://tw.gitbook.net/c_standard_library/c_function_strtok.html  //
+//  在字串中遇到指定符號則分段  //
+
+#include <string.h>
+#include <stdio.h>
+
+int main() {
+
+   char str[80] = "This is - www.gitbook.net - website";
+   char s[2] = "-";    //  設定指定符號  // 
+   char *token;
+   
+   token = strtok(str, s);  //  strtok(被分段字串,指定符號)  //
+   
+   while(token != NULL) {
+
+      printf("%s\n", token);  //  輸出被截斷的字串  //
+      token = strtok(NULL, s);  //  接續進行截斷動作 直到找不到指定符號為止  //
+      
+   }
+   return 0;
+}
