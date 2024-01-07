@@ -1,0 +1,29 @@
+//  參考https://tw.gitbook.net/c_standard_library/c_function_strncmp.html  //
+//  比較字串前n個字元  //
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+   char str1[15];
+   char str2[15];
+   int ret;
+
+   strcpy(str1, "abcdef");
+   strcpy(str2, "abcdEF");
+
+   ret = strncmp(str1, str2, 6);  //  strncmp(被比較字串, 比較字串, 比較長度) ; 若返回值<0 則表明str1小於str2 ; 若>0 則表明str2 小於 str1 ; 若=0 則表明str1 等於str2  //
+
+   if(ret > 0) {
+      printf("str1 is less than str2");
+   }
+   else if(ret < 0)  {
+      printf("str2 is less than str1");
+   }
+   else  {
+      printf("str1 is equal to str2");
+   }
+   
+   return 0;
+}
