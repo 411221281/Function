@@ -7,13 +7,13 @@
 int main () {
 
    time_t rawtime; //  宣告一個以time_t為函數的變數rawtime紀錄秒數 其設定為計算從1970年1月1日0時0分0秒到此時的秒數  //
-   struct tm *info;  //  結構中已規劃好各個時間的格式  //
+   struct tm *info;  //  宣告一個以struct為型態的變數;結構中已規劃好各個時間的格式  //
    char buffer[80];
 
-   time( &rawtime );   //  如果參數為空(NULL) 函數將只通過返回值返回現在的日曆時間  //
+   time(&rawtime);   //  如果參數為空(NULL) 函數將只通過返回值返回現在的日曆時間  //
 
-   info = localtime( &rawtime );    //  localtime() 所指出的時間由定時器表示相應的本地時區所屬時刻。  //
-   printf("Current local time and date: %s", asctime(info));  //  輸出"星期 月 日 十 分 秒 年"的格式  //
+   info = localtime( &rawtime );    //  localtime() 所指出的時間由定時器表示相應的本地時區所屬時刻 以struct為型態的info將本地時間轉換成設定好的格式  //
+   printf("Current local time and date: %s", asctime(info));  //  輸出順序為"星期 月 日 十 分 秒 年"的本地時間  //
 
    return 0;
 }
