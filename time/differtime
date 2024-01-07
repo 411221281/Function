@@ -1,0 +1,19 @@
+//  參考https://tw511.com/a/01/47219.html  //
+//  運算兩時間點間隔多久  //
+
+#include <stdio.h>
+#include <time.h>
+#include <windows.h>  //  sleep()需使用此標頭檔  //
+
+int main() {
+
+    time_t first, second;
+
+    first = time(NULL);  //  紀錄第一個時間點  //
+    Sleep(2000);    //  Sleep()作為讓程式暫停執行一段時間的函數;在Windows平台中的Sleep() 時間單位是毫秒(ms / millisecond) 所以要延遲1秒的話就是1000毫秒  //
+    second = time(NULL);  //  紀錄第二個時間點  //
+
+    printf("Two of them differ %f seconds", difftime(second, first));  //  difftime()將計算first與second兩者相差的時間  //
+
+    return 0;
+}
